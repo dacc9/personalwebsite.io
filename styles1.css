@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+html {
+    background-image: url(images/1641999018541.jpg);
+    background-size: cover;
+}
+
+h1 {
+    font-family: "Space Mono", sans-serif;
+    font-weight: 500;
+    font-size: 100px;
+    color: white;
+    position: fixed;
+    top: 50%;
+}
+h1>span {
+    background-color: black;
+}
+body {
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+li, a, button {
+    font-family: "Space Mono", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px, 10%;
+}
+.nav_links {
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0.2s;
+}
+.nav_links li a:hover {
+    color: #88C0D0
+}
+button {
+    padding: 8px 20px;
+    background-color: #88c0d000;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0.2s;
+}
+button {
+    padding: 8px 20px;
+    background-color: #88c0d000;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0.2s;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgba(0,126,169,0.8);
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    right: 0;
+    z-index: 2;
+}
+.dropdown-content a {
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: black;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.typewriter {
+    position: absolute;
+}
+.typewriter::after {
+    content: '_';
+    background-color: black;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    animation: typing 2s steps(13);
+    animation-fill-mode: forwards;
+}
+@keyframes typing{
+    to {width: 7%;}
+}
+
+img {
+    position: relative;
+    float: left;
+    right:0;
+    height: 335px;
+    width: auto;
+    padding: 20px;
+}
+
+img:hover {
+    transform: scale(1.75);
+    transition: ease-in-out 0.3s;
+    z-index: +1;
+}
